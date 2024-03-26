@@ -1,80 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-// creao root per il color primary
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
-// HEADER
-.riga {
-    width: 100%;
-    height: 20px;
-    background-color: rgb(2 130 249);
-    color: white;
-}
-
-.navbar {
-    align-items: center;
-}
-
-.logoheader {
-    width: 50px;
-}
-
-header {
-    li {
-        display: inline-block;
-
-        .link {
-            text-decoration: none;
-            color: inherit;
-            padding: 1rem;
-        }
-
-        .link.active {
-            background-color: rgb(2 130 249);
-        }
+    main {
+        flex-grow: 1;
     }
-}
-
-.searchbar {
-    height: 90px;
-    width: 20%;
-    display: flex;
-    align-items: center;
-}
-
-.imgcartoon {
-    width: 100%;
-    height: 350px;
-}
-
-// MAIN home.blade la comics del sito
-.arraycard {
-    background-color: rgb(28 28 28);
-    color: white;
-}
-
-.imgarray {
-    width: 100%;
-
-    // faccio in modo che conservi la proporzione
-    aspect-ratio: 2/3;
-
-    // per fare in modo che abbiano la stessa dimensione e che non si stirino
-    object-fit: cover;
-}
-
-// FOOTER
-.primofooter {
-    background-image: url("../images/footer-bg.jpg");
-    display: flex;
-    color: white;
-}
-
-.imgfooter {
-    width: 500px;
-}
-
-.secondofooter {
-    background-color: rgb(48 48 48);
-    height: 80px;
-    color: white;
 }
