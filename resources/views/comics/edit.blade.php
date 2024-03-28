@@ -3,10 +3,10 @@
 @section('title', "Add comic")
 
 @section('main-content')
-  <section>
+<section>
     <div class="container py-4">
-      <h1> Add new comic </h1>
-      <form action="{{ route('comics.update', $comic)}}" method="POST">
+        <h1>Aggiungi nuovo Comic</h1>
+        <form action="{{ route('comics.update', $comic)}}" method="POST">
         @csrf
         @method('PUT')
 
@@ -40,5 +40,5 @@
         <button type="submit" class="btn btn-primary">Salva</button>
     </form>
     </div>
-  </section>
+</section>
 @endsection

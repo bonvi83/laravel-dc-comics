@@ -11,11 +11,18 @@
       <div class="card-container d-flex justify-content-between flex-wrap gap-5 mb-5 mt-5">
         @forelse($comics as $comic)
         <div class="card" style="width: 18rem;">
-          <img src="{{$comic['thumb']}}" class="card-img-top" alt="comic thumb">
+          <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="comic thumb">
           <div class="card-body">
             <h5 class="card-title">{{$comic['title']}}</h5>
             <p class="card-text">{{$comic['description']}}</p>
+
             <a href="{{ route('comics.show', $comic) }}" class="btn btn-primary">Apri dettagli</a>
+
+            <form action="{{ route('comics.update', $comic) }}" method="POST" >
+              @csrf
+              @method('DELETE')
+              <input type="submit" value="Elimina" class="btn btn-danger mt-3">
+            </form>
           </div>
         </div>
         @empty

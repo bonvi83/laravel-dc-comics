@@ -5,8 +5,8 @@
 @section('main-content')
 <section>
     <div class="container py-4">
-      <h1>Aggiungi nuovo Comic</h1>
-      <form action="{{ route('comics.store') }}" method="POST">
+        <h1>Aggiungi nuovo Comic</h1>
+        <form action="{{ route('comics.store') }}" method="POST">
         @csrf
 
         <label for="title" class="form-label">Titolo: </label>
