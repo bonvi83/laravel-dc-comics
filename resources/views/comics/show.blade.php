@@ -43,7 +43,7 @@
 
 
 {{-- modale che non funziona --}}
-@section('modal')
+{{-- @section('modal')
 <div class="modal fade" id="comic-{{$comic->id}}" tabindex="-1" aria-labelledby="comic-{{$comic->id}}" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -65,4 +65,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}

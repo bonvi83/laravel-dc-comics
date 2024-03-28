@@ -21,5 +21,5 @@ Route::get('/', function () {return view('home');})->name('home');
 // Route::get('/comics/store', [ComicController::class,'store'])->name('comics.store');
 // Route::get('/comics/{comic}', [ComicController::class,'show'])->name('comics.show');
 
-// dovrebbe servire solo l'ultimo, per creare diverse rotte
+// questo camando genera in automatico le rotte per le operazioni CRUD sui comics e sostituisce tutte le righe commentate sopra
 Route::resource('comics', ComicController::class);

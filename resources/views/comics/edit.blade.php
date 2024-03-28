@@ -7,6 +7,8 @@
     <div class="container py-4">
         <h1>Aggiungi nuovo Comic</h1>
         <form action="{{ route('comics.update', $comic)}}" method="POST">
+
+        {{-- questo è una chiave di sicerezza che genera dei token per protegge le applicazioni web da attacchi, in questo caso il form --}}
         @csrf
         @method('PUT')
 
